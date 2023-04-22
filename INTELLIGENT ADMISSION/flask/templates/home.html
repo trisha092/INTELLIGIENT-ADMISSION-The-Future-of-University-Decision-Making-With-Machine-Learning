@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Prediction</title>
+    <style type="text/css">
+        body {
+            background-image:linear-gradient(to right, lavender,lightblue, lightgreen, violet);
+        }
+    </style>
+</head>
+<body>
+    <h2>University Admission Prediction</h2>
+    <h4>Enter your details and get probability of your Admission</h4>
+    <form method="post" action="/getdata">
+        <label for ="gre">
+            Enter GRE score &emsp;
+        </label>
+        <input type="text"name="gre" id="gre" required> <br> <br>
+        <label for="toefl">
+            Enter TOEFL score
+        </label>
+        <input type="text" id="toefl"name="toefl" required> <br> <br>
+        <label>Select University Number</label>
+        <br> <br>
+        <input type="radio" name="uni_num" value="1">
+        <label>1</label>
+        <br>
+        <input type="radio" name="uni_num" value="2">
+        <label>2</label>
+        <br>
+        <input type="radio" name="uni_num" value="3">
+        <label>3</label>
+        <br>
+        <input type="radio" name="uni_num" value="4">
+        <label>4</label>
+        <br>
+        <input type="radio" name="uni_num" value="5">
+        <label>5</label>
+ <br> <br>
+        <label for="sop">
+            Enter SOP &emsp:
+        </label>
+        <input type="text"name="sop" id="sop" required> <br> <br>
+        <label for="lor">
+            Enter LOR &emsp;
+        </label>
+        <input type="text" name="lor" id="lor" required> <br> <br>
+        <label for="cgpa">
+            Enter CGPA &nbsp;
+        </label>
+        <input type="text" name="cgpa" id="cgpa"required> <br> <br>
+        <label>Research</label> <br> <br>
+        <input type="radio" name="Research"id="Research" value="1">
+        <label for="Research">Research</label> <br>
+        <input type="radio" id="No_Research" name="Research" value="0">
+        <label for="No_Research">No Research</label> <br> <br> <br>
+        <a href="/no_change"><button type="submit">SUBMIT</button></a>
+    </form>
+</body>
+</html>
